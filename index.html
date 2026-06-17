@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão AFN para AFD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Autômato Finito Não-Determinístico</h2>
+
+        <div class="grid-layout">
+            <div class="input-group">
+                <label>Estados <span>(separados por vírgula)</span></label>
+                <input type="text" id="input-states" value="q0,q1,q2">
+            </div>
+            <div class="input-group">
+                <label>Alfabeto <span>(sem ε)</span></label>
+                <input type="text" id="input-alphabet" value="a,b">
+            </div>
+            <div class="input-group">
+                <label>Estado inicial</label>
+                <input type="text" id="input-initial" value="q0">
+            </div>
+            <div class="input-group">
+                <label>Estados finais <span>(separados por vírgula)</span></label>
+                <input type="text" id="input-final" value="q2">
+            </div>
+        </div>
+
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggle-epsilon" checked>
+                <span class="slider"></span>
+            </label>
+            Incluir transições-ε (ε-NFA)
+        </div>
+
+        <div class="table-header-text">
+            Tabela de transições <span>— use {q0,q1} para múltiplos estados, vazio = ∅</span>
+        </div>
+
+        <table>
+            <thead id="table-head">
+                </thead>
+            <tbody id="table-body">
+                </tbody>
+        </table>
+
+        <button class="btn-submit">Converter AFN → AFD</button>
+        <div id="resultado-afd" style="margin-top: 30px;"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/conversor.js"></script>
+</body>
+</html>
