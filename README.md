@@ -1,5 +1,5 @@
 # Conversor de AFN para AFD
-Uma página web simples para o trabalho de *Teoria da Computação* sobre *Autômatos*. O projeto pode ser acessado por [aqui](https://fabiobjr.github.io/nfa-converter/) ou localmente seguindo as instruções abaixo.
+Uma página web simples para o trabalho de **Teoria da Computação** `INF05035` sobre **Autômatos**. O projeto pode ser acessado por [aqui](https://fabiobjr.github.io/nfa-converter/) ou localmente seguindo as instruções abaixo.
 
 ## Descrição
 O objetivo principal era a construção de um **algoritmo** para converter um **AFN** (Autômato Finito Não-Determinístico) para um **AFD** (Autômato Finito Determinístico).<br>
